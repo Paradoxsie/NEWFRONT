@@ -1,0 +1,101 @@
+:root {
+  color-scheme: dark;
+  --bg: #10131c;
+  --panel: #171c2a;
+  --text: #d6d9e4;
+  --accent: #4aa3ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  background: var(--panel);
+  border-bottom: 1px solid #2a3146;
+}
+
+.stats,
+.controls,
+.buttons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+input[type='range'] {
+  width: 180px;
+}
+
+button {
+  border: 1px solid #32476f;
+  background: #20304d;
+  color: #c7def9;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #27406a;
+}
+
+.game-wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 12px;
+  padding: 12px;
+}
+
+#gameCanvas,
+#overlayCanvas {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  max-width: 1152px;
+  image-rendering: pixelated;
+  border: 1px solid #2f3d5f;
+  border-radius: 6px;
+}
+
+#overlayCanvas {
+  pointer-events: none;
+}
+
+.legend {
+  background: var(--panel);
+  border: 1px solid #2a3146;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.legend h3 {
+  margin-top: 0;
+}
+
+.legend ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
