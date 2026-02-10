@@ -1,0 +1,16 @@
+{
+  "name": "europe_384x216",
+  "width": 384,
+  "height": 216,
+  "description": "Text-only placeholder metadata for future static map import. MVP currently uses procedural terrain in game.js; PNG assets are intentionally omitted from git for PR-tool compatibility.",
+  "terrainLegend": {
+    "0": "water",
+    "1": "plains",
+    "2": "mountain"
+  },
+  "spawnPoints": [
+    {"id": 1, "x": 140, "y": 118},
+    {"id": 2, "x": 225, "y": 91},
+    {"id": 3, "x": 255, "y": 138}
+  ]
+}
