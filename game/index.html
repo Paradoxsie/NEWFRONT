@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEWFRONT MVP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hud">
+    <div class="stats">
+      <span id="gold">Gold: 0</span>
+      <span id="pop">Pop: 0 / 0</span>
+      <span id="land">Land: 0%</span>
+      <span id="winState">Objective: 72% domination</span>
+    </div>
+    <div class="controls">
+      <label>Workers %
+        <input id="workersSlider" type="range" min="10" max="90" value="55" />
+        <span id="workersValue">55%</span>
+      </label>
+      <label>Attack Ratio %
+        <input id="attackSlider" type="range" min="5" max="70" value="25" />
+        <span id="attackValue">25%</span>
+      </label>
+      <button id="buildCity">Build City (120)</button>
+      <button id="buildDefense">Build Defense (90)</button>
+    </div>
+  </header>
+
+  <main class="game-wrap">
+    <canvas id="mapCanvas"></canvas>
+    <canvas id="overlayCanvas"></canvas>
+  </main>
+
+  <footer class="hint">
+    Left click enemy border tile to attack. Right click your tile to build. Mouse wheel to zoom.
+  </footer>
+
+  <script src="game.js" type="module"></script>
+</body>
+</html>

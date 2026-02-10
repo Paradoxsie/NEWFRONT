@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  --bg: #10151c;
+  --panel: #1d2633;
+  --accent: #5aa8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: #ecf3ff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.hud {
+  background: var(--panel);
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #2f3d52;
+}
+
+.stats,
+.controls {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.controls button {
+  background: #304869;
+  border: 1px solid #496183;
+  color: #e4efff;
+  border-radius: 6px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.game-wrap {
+  position: relative;
+  margin: 10px;
+  border: 1px solid #3a4d68;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-self: center;
+  align-self: center;
+}
+
+canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+#overlayCanvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hint {
+  color: #9eb1cc;
+  padding: 8px 14px;
+  border-top: 1px solid #2f3d52;
+}

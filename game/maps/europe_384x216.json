@@ -1,0 +1,18 @@
+{
+  "name": "MVP Europe-ish",
+  "width": 128,
+  "height": 72,
+  "seed": 7,
+  "terrainTypes": {
+    "0": "water",
+    "1": "plains",
+    "2": "mountain"
+  },
+  "spawnPoints": [
+    {"faction": 1, "x": 28, "y": 40},
+    {"faction": 2, "x": 55, "y": 25},
+    {"faction": 3, "x": 88, "y": 30},
+    {"faction": 4, "x": 102, "y": 48}
+  ],
+  "notes": "The mask is generated procedurally in game.js for MVP; this file provides core dimensions and spawns."
+}
