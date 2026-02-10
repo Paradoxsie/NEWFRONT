@@ -1,0 +1,16 @@
+{
+  "note": "Placeholder map metadata for future map-loading integration.",
+  "width": 384,
+  "height": 216,
+  "terrainLegend": {
+    "0": "water",
+    "1": "plains",
+    "2": "mountain"
+  },
+  "spawnPoints": [
+    { "faction": 1, "x": 56, "y": 38 },
+    { "faction": 2, "x": 132, "y": 36 },
+    { "faction": 3, "x": 72, "y": 74 },
+    { "faction": 4, "x": 140, "y": 76 }
+  ]
+}
