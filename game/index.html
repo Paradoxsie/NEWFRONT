@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewFront MVP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hud">
+      <div class="stats">
+        <span id="gold">Gold: 0</span>
+        <span id="pop">Pop: 0 / 0</span>
+        <span id="land">Land: 0%</span>
+      </div>
+      <div class="controls">
+        <label>
+          Workers %
+          <input id="workers" type="range" min="10" max="90" value="60" />
+          <span id="workersValue">60%</span>
+        </label>
+        <label>
+          Attack ratio %
+          <input id="attack" type="range" min="5" max="80" value="20" />
+          <span id="attackValue">20%</span>
+        </label>
+        <button id="buildCity">Build City (120)</button>
+        <button id="buildDefense">Build Defense Post (80)</button>
+      </div>
+      <p class="hint">Left click enemy border to attack. Right click your land to build.</p>
+    </header>
+
+    <main class="stage">
+      <canvas id="map"></canvas>
+      <canvas id="overlay"></canvas>
+    </main>
+
+    <script src="game.js" type="module"></script>
+  </body>
+</html>

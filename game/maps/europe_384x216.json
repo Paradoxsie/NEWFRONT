@@ -1,0 +1,8 @@
+{
+  "width": 128,
+  "height": 72,
+  "legend": {
+    "terrain": {"0":"water","1":"plains","2":"mountain"},
+    "spawns": {"1":"player","2":"botA","3":"botB"}
+  }
+}
